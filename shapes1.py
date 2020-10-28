@@ -1,13 +1,27 @@
 import turtle
 from turtle import *
 from turtle import Screen
-from freegames import vector
     
 def emptySquare():
-    pass  # TODO
+    
+    t = turtle.Turtle()
+    for i in range(4):
+        t.forward(50)
+        t.right(90)     # Rotate clockwise by 90 degrees
     
 def filledSquare():
-  pass  # TODO
+    s = int(input("Enter the length of the side of the square: ")) 
+    col = input("Enter the color name or hex value of color(# RRGGBB): ") 
+    t = turtle.Turtle()
+    t.fillcolor(col)
+    t.begin_fill()
+    for i in range(4):
+        t.forward(s)
+        t.right(90)     # Rotate clockwise by 90 degrees
+    t.end_fill()
+
+    pass  # TODO
+ 
   
 while True:
     screen = Screen()
