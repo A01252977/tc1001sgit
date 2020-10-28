@@ -1,13 +1,21 @@
 import turtle
 from turtle import *
 from turtle import Screen
-from freegames import vector
-    
+
 def emptySquare():
     pass  # TODO
     
-def filledSquare():
-  pass  # TODO
+def emptyCircle():
+    t = turtle.Turtle()
+    t.circle(100)
+
+def filledCircle():
+    t = turtle.Turtle()
+    t.fillcolor('red')  # set the fillcolor
+    t.begin_fill()  # start the filling color 
+    t.circle(100)
+    t.end_fill()
+
   
 while True:
     screen = Screen()
@@ -18,4 +26,7 @@ while True:
         emptySquare()
     elif (answer == '2'):
         filledSquare()
- 
+    elif (answer == '3'):
+        emptyCircle()
+    elif (answer == '4'):
+        filledCircle() 
